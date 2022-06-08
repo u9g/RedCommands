@@ -3,6 +3,7 @@ plugins {
 	id 'idea'
 	id 'maven-publish'
 }
+version = 1.5.7
 targetCompatibility = 1.8
 sourceCompatibility = 1.8
 repositories {
@@ -47,7 +48,6 @@ publishing {
 		maven(MavenPublication) {
 			groupId = 'com.github.Redempt'
 			artifactId = rootProject.name
-			version = 1.5.7
 			artifact jar
 			artifact javadocJar
 			artifact sourcesJar
